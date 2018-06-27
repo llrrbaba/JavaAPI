@@ -20,10 +20,10 @@ public class EncodeHanZi {
 
         //将汉字编码
         text = URLEncoder.encode(text,"utf-8");
-        System.out.println(new String(text));//%E4%BA%AC
+        System.out.println(new String(text));//%E4%BA%ACa123456
 
         //将编码后的汉字解码
         text = URLDecoder.decode(text,"utf-8");
-        System.out.println(text);//京
+        System.out.println(text);//京a123456
     }
 }

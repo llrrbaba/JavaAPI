@@ -1,4 +1,4 @@
-package cn.rocker.designpattern.helloworld.beginwithduck;
+package cn.rocker.designpattern.helloworld.strategy;
 
 /**
  * @author rocker
@@ -22,6 +22,14 @@ public abstract class Duck {
 
     public void swim(){
         System.out.println("All ducks float!!!");
+    }
+
+    //通过setter方法，灵活设置鸭子的某个行为的具体实现
+    public void setFlyBehavior(FlyBehavior fb){
+        flyBehavior = fb;
+    }
+    public void setQuackBehavior(QuackBehavior qb){
+        quackBehavior = qb;
     }
 
 }

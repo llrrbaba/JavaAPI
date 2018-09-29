@@ -1,4 +1,4 @@
-package cn.rocker.designpattern.helloworld.beginwithduck;
+package cn.rocker.designpattern.helloworld.strategy;
 
 /**
  * @author rocker

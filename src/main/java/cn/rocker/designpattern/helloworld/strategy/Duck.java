@@ -4,6 +4,8 @@ package cn.rocker.designpattern.helloworld.strategy;
  * @author rocker
  * @version V1.0
  * @Description:    鸭子超类
+ *                      策略模式：定义了算法族(不同的行为)，分别封装起来，让他们可以互相替换，
+ *                      此模式让算法的变化独立于使用算法的客户
  * @date 2018/9/29 9:38
  */
 public abstract class Duck {

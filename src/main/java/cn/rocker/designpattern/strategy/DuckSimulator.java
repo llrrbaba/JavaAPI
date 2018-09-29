@@ -1,4 +1,4 @@
-package cn.rocker.designpattern.helloworld.strategy;
+package cn.rocker.designpattern.strategy;
 
 import org.junit.Test;
 

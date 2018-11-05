@@ -6,7 +6,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * Lock接口测试
+ * Lock.lock()方法测试
  * 声明lock要在成员变量声明，如果在方法中声明，则每个线程会获取不同的锁，
  * b线程不用等待a线程执行unlock()，就可以调用lock()
  */

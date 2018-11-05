@@ -1,0 +1,31 @@
+package cn.rocker.concurrent.atomicity;
+
+import java.util.concurrent.atomic.AtomicInteger;
+
+public class AtomicIntegerTest {
+
+    public AtomicInteger inc = new AtomicInteger();
+
+    public  void increase() {
+        inc.getAndIncrement();
+    }
+
+    public static void main(String[] args) {
+        final AtomicIntegerTest test = new AtomicIntegerTest();
+        for(int i=0;i<10;i++){
+            new Thread(){
+                public void run() {
+                    for(int j=0;j<1000;j++)
+                        test.increase();
+                }
+            }.start();
+        }
+
+        while(Thread.activeCount()>1)  //保证前面的线程都执行完
+            Thread.yield();
+
+        //每次执行完输出的都是10000，保证了自增操作的原子性
+        System.out.println(test.inc);
+    }
+
+}

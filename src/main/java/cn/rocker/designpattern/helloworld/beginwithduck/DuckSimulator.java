@@ -1,5 +1,7 @@
 package cn.rocker.designpattern.helloworld.beginwithduck;
 
+import cn.rocker.designpattern.strategy.DuckModel;
+
 /**
  * @author rocker
  * @version V1.0

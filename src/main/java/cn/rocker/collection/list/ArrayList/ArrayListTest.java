@@ -2,7 +2,6 @@ package cn.rocker.collection.list.ArrayList;
 
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
-import org.junit.experimental.theories.suppliers.TestedOn;
 
 import java.util.ArrayList;
 import java.util.List;

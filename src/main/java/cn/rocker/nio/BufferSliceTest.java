@@ -44,6 +44,19 @@ public class BufferSliceTest {
             System.out.println( buffer.get() );
         }
 
+        buffer.flip();
+
+        //这里回复缓冲区为原来的内容，通过输出，可以发现子缓冲区内容也被恢复了
+        for (int i=0; i<buffer.capacity(); ++i) {
+            buffer.put( (byte)i );
+        }
+
+        buffer.flip();
+
+        while (buffer.remaining()>0) {
+            System.out.println( buffer.get() );
+        }
+
     }
 
 }

@@ -51,8 +51,9 @@ public class CountDownLatchTest {
 
         try {
             System.out.println("等待2个子线程执行完毕...");
-            latch.await();
 
+            //这个方法会把后面的线程挂起，直到计数器为0
+            latch.await();
 
             //只有两个子线程执行完毕，才会输出这两句话
             System.out.println("2个子线程已经执行完毕");

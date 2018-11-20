@@ -1,4 +1,4 @@
-package cn.rocker.socket;
+package cn.rocker.socket.udp;
 
 import org.junit.Test;
 

@@ -24,4 +24,3 @@
 当JVM在加载一个类的时候，如果这个类在编译时是可用的，但是在运行时找不到这个类的定义的时候，JVM就会抛出一个NoClassDefFoundError错误；
 
 我们先创建一个NoClassDefFoundErrorTest类，然后编译以后，将创建的类生产的NoClassDefFoundErrorTest.class文件删除，然后执行程序，就会出现该异常 
-
